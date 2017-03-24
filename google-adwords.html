@@ -1,0 +1,95 @@
+<script type="text/javascript">
+    RED.nodes.registerType('google-adwords', {
+        category: 'function',
+        color: '#DDAA44',
+        icon: 'google-adwords.png',
+        defaults: {
+            name: {
+                value: ""
+            },
+            developerToken: {
+                value: ""
+            },
+            clientCustomerId: {
+                value: ""
+            },
+            clientId: {
+                value: ""
+            },
+            clientSecret: {
+                value: ""
+            },
+            refreshToken: {
+                value: ""
+            },
+            service: {
+                type: ""
+            },
+            version: {
+                type: "",
+                value: "v201702"
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        label: function() {
+            return this.name || "google-adwords";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="google-adwords">
+    <div class="form-row">
+        <label for="node-input-name">
+            <i class="icon-tag"></i>
+            Name</label>
+        <input type="text" id="node-input-name" placeholder="Name"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-developerToken">
+            <i class="fa fa-fw fa-key"></i>
+            Developer Token</label>
+        <input type="text" id="node-input-developerToken" placeholder="Developer token"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-clientCustomerId">
+            <i class="icon-tag"></i>
+            Customer ID</label>
+        <input type="text" id="node-input-clientCustomerId" placeholder="Client customer ID"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-clientId">
+            <i class="icon-tag"></i>
+            Client ID</label>
+        <input type="text" id="node-input-clientId" placeholder="Client ID"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-clientSecret">
+            <i class="fa fa-fw fa-key"></i>
+            Client Secret</label>
+        <input type="text" id="node-input-clientSecret" placeholder="Client secret"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-refreshToken">
+            <i class="fa fa-fw fa-key"></i>
+            Refresh Token</label>
+        <input type="text" id="node-input-refreshToken" placeholder="Refresh token"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-service">
+            <i class="fa fa-fw fa-cog"></i>
+            Service</label>
+        <input type="text" id="node-input-service" placeholder="Service name"/>
+    </div>
+    <div class="form-row">
+        <label for="node-input-version">
+            <i class="fa fa-fw fa-key"></i>
+            Version</label>
+        <input type="text" id="node-input-version" placeholder="Version"/>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="google-adwords">
+    <p>A node that calls method of Google AdWords API.</p>
+    <p>See the <a href="https://github.com/ChrisAlvares/node-adwords" target="_blank"><i>node-adwords</i></a> for services.</p>
+</script>
