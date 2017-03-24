@@ -3,7 +3,7 @@
   "version": "201702.1.4",
   "description": "Node-RED node for Google AdWords API call.",
   "dependencies": {
-    "node-adwords": "201702.1.2"
+    "node-adwords": "201702.1.1"
   },
   "license": "MIT",
   "keywords": [
